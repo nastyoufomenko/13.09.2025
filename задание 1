@@ -1,18 +1,14 @@
 import math
-
 number = input("Введите целое неотрицательное число: ")
-
 
 try:
     n = int(number)
-except ValueError:
-    print("Ошибка! Нужно ввести целое число.")
+except:
+    print("Ошибка! Это не целое число.")
     exit()
 
-
 if n < 0:
-    print("Ошибка! Число должно быть неотрицательным.")
+    print("Ошибка! Число не может быть отрицательным.")
 else:
-    
-    result = math.factorial(n)
+   result = math.factorial(n)
     print(f"Факториал числа {n} равен {result}")
