@@ -1,13 +1,11 @@
 import math as m
 number = input("Введите целое неотрицательное число: ")
 
-
 try:
     n = int(number)
 except ValueError:
     print("Ошибка! Нужно ввести целое число.")
     exit()
-
 
 if n < 0:
     print("Ошибка! Число должно быть неотрицательным.")
